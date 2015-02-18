@@ -1,0 +1,11 @@
+<ion-view view-title="Galleries">
+  <ion-content>
+    <div class="list">
+      <a class="item item-thumbnail-left" href="#/app/photos/{{item.id}}" ng-repeat="item in result.photos">
+        <img src="{{ item.image_url }}">
+        <h2>{{ item.name }}</h2>
+        <p>By: {{ item.user.fullname }}</p>
+      </a>
+    </div>
+  </ion-content>
+</ion-view>

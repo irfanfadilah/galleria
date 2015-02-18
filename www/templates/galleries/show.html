@@ -1,0 +1,20 @@
+<ion-view view-title="{{ result.photo.name }}">
+  <ion-content>
+
+    <div class="list card">
+
+      <div class="item item-avatar">
+        <img src="{{ result.photo.user.userpic_url }}">
+        <h2>{{ result.photo.user.fullname }}</h2>
+        <p>{{ result.photo.user.country }}</p>
+      </div>
+
+      <div class="item item-body">
+        <img class="full-image" src="{{ result.photo.image_url }}">
+        <p ng-bind-html="result.photo.description"></p>
+      </div>
+
+    </div>
+
+  </ion-content>
+</ion-view>
